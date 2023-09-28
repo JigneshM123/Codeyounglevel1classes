@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<h1><center>Browser and Document Object Model</center></h1>
+<h2>Browser Object Model</h2>
+<br>
+<p id = "new">It is used to interact with the browser.
+The default object of browser is window means you can call all 
+the functions of window by specifying window or directly. 
+We can give commands in the console window.
+For example:
+window.alert(‘CodeYoung’)</p>
+<br><br>
+<h2>Document Object Model</h2>
+<br>
+<p>The document object represents the whole html document.
+    When html document is loaded in the browser, it becomes a 
+    document object. It is the root element that represents the 
+    html document. It has properties and methods. By the help 
+    of document object, we can add dynamic content to our web
+    page.
+    We have different types of selectors, like if we have declared 
+    any class or id, then with help of DOM we can select them in 
+    JS and make it change dynamically.
+    For ex-
+    ● getElementById() - returns the element having the given id 
+    value.</p>
+<br>
+<script>
+var a = "Jignesh"
+var b = "CodeYoung"
+var c = "This is a Codeyoung class in progress"
+document.write(" A little boy named "+a+" joined coding classes and their company is called "+b+".")
+
+document.getElementById("new").innerHTML = c
+</script>
+</body>
+</html>

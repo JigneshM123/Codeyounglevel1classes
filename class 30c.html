@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<h1><center>Javascript functions and events</center></h1>
+<img  onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" src="https://th.bing.com/th/id/R.a25c198273a072fc9a608ee01a3bff80?rik=ijaaUucld2zKRw&riu=http%3a%2f%2fpluspng.com%2fimg-png%2fsmily-png-hd-smiley-png-3896.png&ehk=vu6ggPM6nNmojZQNorBph0AdzOQdar2Sxn8QBurOL6I%3d&risl=&pid=ImgRaw&r=0" alt="Smiley" width="32" height="32">
+
+<p>The function bigImg() is triggered when the user moves the mouse pointer over the image.</p>
+<p>The function normalImg() is triggered when the mouse pointer is moved out of the image.</p>
+
+<script>
+function bigImg(x) {
+  x.style.height = "64px";
+  x.style.width = "64px";
+}
+
+function normalImg(x) {
+  x.style.height = "32px";
+  x.style.width = "32px";
+}
+</script>
+</body>
+</html>

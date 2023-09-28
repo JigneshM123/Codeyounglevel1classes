@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<h1><center>Project on events</center></h1>
+<h2>1.Create a button 
+2.Then when you click the button the prompt needs to be opened
+3.Prompt will have a text as enter your name
+4.After filling the prompt you have to display a text as hi + name + howareyou</h2>\
+<button onclick="myFunction()">Click me</button>
+<p id = "demo"></p>
+<script>
+function myFunction(){
+let text
+let person = prompt("Please enter your name:");
+ if (person == null || person == "") {
+ text = "User cancelled the prompt.";
+ } else {
+ text = "Hello " + person + "! How are you today?";
+ }
+document.getElementById("demo").innerHTML=text
+}
+</script>
+</body>
+</html>

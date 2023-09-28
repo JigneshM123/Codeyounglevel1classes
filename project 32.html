@@ -1,0 +1,61 @@
+<!--Ask the student to create animation of circle and 
+make it background color get changed.-->
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<h1>project 32</h1>
+<style>
+div.A{
+width:200px;
+height:200px;
+background-color:red;
+animation-name:colorchange;
+animation-duration:3s;
+animation-iteration-count:2;
+}
+@keyframes colorchange{
+from{background-color:orange;}
+to{background-color:red;}
+}
+div.B{width:200px;
+height:200px;
+background-color:red;
+animation-name:colorspring;
+animation-duration:4s;
+animation-iteration-count:infinite;
+border-radius:100%;
+}
+@keyframes colorspring{
+0%{background-color:lightgreen;}
+25%{background-color:mediumspringgreen;}
+50%{background-color:limegreen}
+75%{background-color:green}
+100%{background-color:darkgreen}
+}
+div.C{width:100px;
+height:100px;
+background:linear-gradient(to right,);
+animation-name:colorgreen;
+animation-duration:8s;
+animation-iteration-count:4;
+position:relative;
+}
+@keyframes colorgreen{
+0%{left:0px;top:0px}
+25%{left:200px;top:0px}
+50%{left:200px;top:200px}
+75%{left:0px;top:200px}
+100%{left:0px;top:0px}
+}
+</style>
+<div class = "A">
+</div>
+<div class = "B">
+</div>
+<div class = "C">
+</div>
+</style>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div.A
+{
+width:200px;
+height:200px;
+background-color:blue;
+animation-name:colorchange;
+animation-duration:3s;
+animation-iteration-count:2;
+}
+@keyframes colorchange
+{
+from{background-color:blue;}
+to{background-color:yellow;}
+}
+div.B
+{
+width:200px;
+height:200px;
+background-color:red;
+animation-name:colorheat;
+animation-duration:4s;
+animation-iteration-count:infinite;
+border-radius:100%;
+}
+@keyframes colorheat
+{
+0%{background-color:yellow;}
+25%{background-color:orangered;}
+50%{background-color:red}
+75%{background-color:brown}
+100%{background-color:black}
+}
+div.C
+{
+width:100px;
+height:100px;
+background:linear-gradient(to right,blue,cornflowerblue,skyblue);
+animation-name:colorblue;
+animation-duration:8s;
+animation-iteration-count:4s;
+position:relative;
+}
+@keyframes colorblue
+{
+0%{left:0px;top:0px}
+25%{left:200px;top:0px}
+50%{left:200px;top:200px}
+75%{left:0px;top:200px}
+100%{left:0px;top:0px}
+}
+</style>
+</head>
+<body>
+<h1><center>Animations</center></h1>
+<div class = "A">
+</div>
+<div class = "B">
+</div>
+<div class = "C">
+</div>
+</body>
+</html>

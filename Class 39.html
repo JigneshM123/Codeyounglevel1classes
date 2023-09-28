@@ -1,0 +1,52 @@
+<!-- Today student will create a project using HTML forms and
+Javascript.
+Create a sample form program which collects first _ name, last _
+name, email, user_id, and password and confirms password from
+the user.
+Now form should not get submitted until all the inputs are
+provided.
+Validate the form with password and confirm password i.e. the
+values entered in the password and confirm password textboxes
+should be the same.
+If any error is present show it using alert-->
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<h1><center>Project 3</center></h1>
+<form>
+First name:
+<input type = "text" required>
+<br><br>
+Last name:
+<input type = "text" required>
+<br><br>
+Email:
+<input type = "email" required>
+<br><br>
+User id:
+<input type = "text" required>
+<br><br>
+Password:
+<input type = "password" name = "password1" required>
+<br><br>
+Confirm password:
+<input type = "password" name = "password2" required>
+<br><br>
+<input type = "submit" onclick = "checkpassword()">
+</form>
+<script>
+function checkpassword(){
+var a = document.getElementById("password1")
+var b = document.getElementById("password2")
+if(a != b){
+ alert("password did not match")
+}
+else{
+alert("password created successfully")
+}
+}
+</script>
+</body>
+</html>
